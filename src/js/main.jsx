@@ -16,3 +16,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Home/>
   </React.StrictMode>,
 )
+
+/*
+   1.- al cargar la pagina mostrar  los show de tv que contengan "girls"
+   2.- El usuario escriba un nombre de un show y mostrar la lista con ese resultado
+   3.- Guardar en un array nuevo --> favoritos series (useState fav, NO USAR PUSH, [...array]--> spreadOperator)
+   4.- pintar la lista d emis favoritos
+   
+*/
