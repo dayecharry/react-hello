@@ -1,7 +1,7 @@
 import AddFav from "./AddFav";
 
 //create your first component
-const Show = ({item}) => {
+const Show = ({item, addToFavorites}) => {
 	
 	return (
 		<div className="text-center">
@@ -12,8 +12,7 @@ const Show = ({item}) => {
 			:
 			null
 			}
-			{/* <AddFav/> */}
-			<button>Añadir fav</button>
+			<AddFav addToFavorites={addToFavorites}/> 
 		</section>
 		
 		</div>
