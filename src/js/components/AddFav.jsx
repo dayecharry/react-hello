@@ -1,12 +1,15 @@
 
 //create your first component
-const AddFav = () => {
-	return (
-		<div className="text-center">
-            boton añadir
 
-		
-		</div>
+import { useState } from "react";
+
+const AddFav = (addToFavorites) => {
+	return (
+		<>
+			<button type="button" class="btn btn-outline-warning ms-5" onClick={addToFavorites}>
+				💗
+			</button>
+		</>
 	);
 };
 
