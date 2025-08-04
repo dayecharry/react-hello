@@ -22,7 +22,7 @@ const ListShow = ({search}) => {
 	return (
 		<div className="text-center">
         	{ list.length > 0 ? 
-				list.map((item )=> <Show  item={item}/>)
+				list.map((item,i )=> <Show  item={item} key={i}/>)
 			:
 				null
 		}

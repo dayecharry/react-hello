@@ -10,10 +10,13 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+import { ShowsProvider } from './hooks/useGlobalShows';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+   <ShowsProvider>
+        <Home/> 
+  </ShowsProvider>
   </React.StrictMode>,
 )
 

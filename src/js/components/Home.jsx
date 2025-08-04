@@ -1,7 +1,10 @@
 import { useState } from "react";
 import ListShow from "./ListShow";
 import SearchShow from "./SearchShow";
+
 import FavList from "./FavList"
+import AddShow from "./AddShow";
+
 
 //create your first component
 const Home = () => {
@@ -20,6 +23,9 @@ const Home = () => {
 			<SearchShow search={search} setSearch={setSearch} />
 			<ListShow search={search} />
 			<FavList favorites={favorites} />
+			<AddShow/>
+          <SearchShow search={search} setSearch={setSearch}/>
+		  <ListShow  search={search}/>
 		</div>
 	);
 };
