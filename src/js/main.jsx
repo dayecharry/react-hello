@@ -11,12 +11,15 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 import { ShowsProvider } from './hooks/useGlobalShows';
+import { router } from './routes';
+import { RouterProvider } from 'react-router-dom';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <ShowsProvider>
-        <Home/> 
-  </ShowsProvider>
+    <ShowsProvider>
+     <RouterProvider router={router}/>
+    </ShowsProvider>
   </React.StrictMode>,
 )
 
