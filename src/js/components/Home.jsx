@@ -3,6 +3,8 @@ import ListShow from "./ListShow";
 import SearchShow from "./SearchShow";
 import AddShow from "./AddShow";
 import Menu from "./Menu";
+import AddProduct from "./AddProduct";
+import ListProduct from "./ListProduct";
 
 
 //create your first component
@@ -11,10 +13,13 @@ const Home = () => {
 	const [search, setSearch] = useState("girl")
 	return (
 		<div className="text-center">
-		 <Menu/>
-		  <AddShow/>
-          <SearchShow search={search} setSearch={setSearch}/>
-		  <ListShow  search={search}/>
+			<Menu />
+			<AddProduct />
+			<ListProduct/>
+			<AddShow />
+			<SearchShow search={search} setSearch={setSearch} />
+			<ListShow search={search} />
+
 		</div>
 	);
 };
